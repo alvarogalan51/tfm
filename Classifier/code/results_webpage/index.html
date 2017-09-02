@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='http://fonts.googleapis.com/css?family=Nunito:300|Crimson+Text|Droid+Sans+Mono' rel='stylesheet' type='text/css'>
+<style type="text/css">
+body {
+  margin: 0px;
+  width: 100%;
+  font-family: 'Crimson Text', serif;
+  background: #fcfcfc;
+}
+table td {
+  text-align: center;
+  vertical-align: middle;
+}
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-weight: normal;
+  font-size: 28px;
+  margin: 25px 0px 0px 0px;
+  text-transform: lowercase;
+}
+.container {
+  margin: 0px auto 0px auto;
+  width: 1160px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+
+<center>
+<h1>CS 143 Project 3 results visualization</h1>
+<img src="confusion_matrix.png">
+
+<br>
+Accuracy (mean of diagonal of confusion matrix) is 0.300
+<p>
+
+<table border=0 cellpadding=4 cellspacing=1>
+<tr>
+<th>Category name</th>
+<th>Accuracy</th>
+<th colspan=2>Sample training images</th>
+<th colspan=2>Sample true positives</th>
+<th colspan=2>False positives with true label</th>
+<th colspan=2>False negatives with wrong predicted label</th>
+</tr>
+<tr>
+<td>m5</td>
+<td>0.100</td>
+<td bgcolor=LightBlue><img src="thumbnails/m5_Mobile_FF_IMG_20170610_130335_S_L.jpg" width=75.0000000000 height=100.0000000000></td>
+<td bgcolor=LightBlue><img src="thumbnails/m5_Mobile_FF_IMG_20170610_125805_S_L.jpg" width=75.0000000000 height=100.0000000000></td>
+<td bgcolor=LightGreen><img src="thumbnails/m5_Mobile_FF_IMG_20170728_111155_S_L.jpg" width=75.0000000000 height=57.0000000000></td>
+<td bgcolor=LightGreen></td>
+<td bgcolor=LightCoral><img src="thumbnails/motog5_Mobile_FF_IMG_20170815_172011626_S_L.jpg" width=75.0000000000 height=100.0000000000><br><small>motog5</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/motog5_Mobile_FF_IMG_20170808_152938678_S_L.jpg" width=75.0000000000 height=57.0000000000><br><small>motog5</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/m5_Mobile_FF_IMG_20170728_124429_S_L.jpg" width=75.0000000000 height=100.0000000000><br><small>motog5</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/m5_Mobile_FF_IMG_20170728_154032_S_L.jpg" width=75.0000000000 height=57.0000000000><br><small>motog5</small></td>
+</tr>
+<tr>
+<td>motog5</td>
+<td>0.500</td>
+<td bgcolor=LightBlue><img src="thumbnails/motog5_Mobile_FF_IMG_20170716_164536650_BURST001_S_L.jpg" width=75.0000000000 height=134.0000000000></td>
+<td bgcolor=LightBlue><img src="thumbnails/motog5_Mobile_FF_IMG_20170715_133118175_HDR_S_L.jpg" width=75.0000000000 height=134.0000000000></td>
+<td bgcolor=LightGreen><img src="thumbnails/motog5_Mobile_FF_IMG_20170809_142323324_S_L.jpg" width=75.0000000000 height=100.0000000000></td>
+<td bgcolor=LightGreen><img src="thumbnails/motog5_Mobile_FF_IMG_20170810_114219757_S_L.jpg" width=75.0000000000 height=57.0000000000></td>
+<td bgcolor=LightCoral><img src="thumbnails/m5_Mobile_FF_IMG_20170728_154032_S_L.jpg" width=75.0000000000 height=57.0000000000><br><small>m5</small></td>
+<td bgcolor=LightCoral><img src="thumbnails/m5_Mobile_FF_IMG_20170728_124429_S_L.jpg" width=75.0000000000 height=100.0000000000><br><small>m5</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/motog5_Mobile_FF_IMG_20170808_152938678_S_L.jpg" width=75.0000000000 height=57.0000000000><br><small>m5</small></td>
+<td bgcolor=#FFBB55><img src="thumbnails/motog5_Mobile_FF_IMG_20170808_133327371_S_L.jpg" width=75.0000000000 height=100.0000000000><br><small>m5</small></td>
+</tr>
+<tr>
+<th>Category name</th>
+<th>Accuracy</th>
+<th colspan=2>Sample training images</th>
+<th colspan=2>Sample true positives</th>
+<th colspan=2>False positives with true label</th>
+<th colspan=2>False negatives with wrong predicted label</th>
+</tr>
+</table>
+</center>
+
+
+</div>
+</body>
+</html>
