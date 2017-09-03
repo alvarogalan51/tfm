@@ -13,11 +13,11 @@
 CLASSIFIER = 'support vector machine';
 
 % set up paths to VLFeat functions. 
-run('D:\Dropbox\Máster en Ciberseguridad\TFM\Definitivo\Classifier\vlfeat-0.9.20\toolbox\vl_setup')
-%run('D:\Dropbox\Dropbox\Máster en Ciberseguridad\TFM\vlfeat-0.9.20\toolbox\vl_setup')
+run('D:\Dropbox\MÃ¡ster en Ciberseguridad\TFM\Definitivo\Classifier\vlfeat-0.9.20\toolbox\vl_setup')
+%run('D:\Dropbox\Dropbox\MÃ¡ster en Ciberseguridad\TFM\vlfeat-0.9.20\toolbox\vl_setup')
 
-data_path = 'D:\Dropbox\Máster en Ciberseguridad\TFM\Definitivo\Classifier\input';
-%data_path = 'D:\Dropbox\Dropbox\Máster en Ciberseguridad\TFM\Classifier';
+data_path = 'D:\Dropbox\MÃ¡ster en Ciberseguridad\TFM\Definitivo\Classifier\input';
+%data_path = 'D:\Dropbox\Dropbox\MÃ¡ster en Ciberseguridad\TFM\Classifier';
 
 %categories = {'Kitchen', 'Store', 'Bedroom', 'LivingRoom', 'Office', ...
 %       'Industrial', 'Suburb', 'InsideCity', 'TallBuilding', 'Street', ...
@@ -30,8 +30,8 @@ categories = {'m5', 'motog5'};
 %    'Cty', 'Bld', 'St', 'HW', 'OC', 'Cst', 'Mnt', 'For'};
 abbr_categories = {'m5', 'motog5'};
 
-num_train_per_cat = 10;
-num_test_per_cat = 10;
+num_train_per_cat = 60;
+num_test_per_cat = 40;
 
 fprintf('Getting paths and labels for all train and test data\n')
 [train_image_paths, test_image_paths, train_labels, test_labels] = ...
